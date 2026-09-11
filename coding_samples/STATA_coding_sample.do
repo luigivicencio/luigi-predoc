@@ -1,6 +1,6 @@
 
 	*===============================================================================
-	* CODING_SAMPLE.DO
+	* STATA_coding_sample.do
 	*-------------------------------------------------------------------------------
 	/*
 	Author: Luigi Vicencio
@@ -28,8 +28,8 @@
 
 	- Paths below are relative to this file's own folder (Code/). Before running, 
 	 set your working directory there, e.g.:
-	   cd ".../Honours Thesis/Code_Sample/Code"
-	   do "coding_sample.do"
+	   cd ".../Honours_Thesis/Code"
+	   do "STATA_coding_sample.do"
 	   
 	- Requires: esttab (SSC: ssc install estout) for the regression table
 
@@ -49,7 +49,7 @@
 	global log_dir    "../Log"
 
 	cap log close
-	log using "$log_dir/coding_sample.log", replace text
+	log using "$log_dir/STATA_coding_sample.log", replace text
 
 	*===============================================================================
 	**# PART 1: BUILD THE BARTIK SHIFT-SHARE INSTRUMENT
